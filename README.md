@@ -1,2 +1,4 @@
 # study_buddy
-software engineering final project
+By - Avani Tiwari, Jun Ming Ooi, Himanshi Lalwani and Tuqa Abdelnasir
+
+Final project for Software Engneering 
