@@ -4,9 +4,23 @@ body
 {
    
     font-family: 'Roboto Mono', monospace;
+   
 }
 
+h1{
+    text-align: center;
+    font-size: 60px;
+}
 
+.wrapper p{
+    font-size: 20px;
+}
+#ughh
+{
+    position: relative;
+    left:5vw;
+    font-size: 20px;
+}
 
 .cards:hover{
         box-shadow: 0 10px 20px rgba(0,0,0,.20), 0 4px 8px rgba(0,0,0,.6);;
@@ -14,13 +28,12 @@ body
 
 .cards
 {
-    display: flex;
-    text-align: center;
-    width: 400px;
-    height: 500px;
+    
+    width: 350px;
+    height: 480px;
     background-color: #875f9a;
     margin: 20px;
-    padding:10px;
+    padding:30px;
     border-radius: 30px;
     font-size: 40px;
 }
@@ -29,6 +42,7 @@ body
     display: flex;
     justify-content: center;
     background-color: transparent;
-    left: 0px;
+    position: relative;
+    left: 1vw;
 
 }
