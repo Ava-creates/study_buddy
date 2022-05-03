@@ -1,0 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;400&display=swap');
+
+body
+{
+   
+    font-family: 'Roboto Mono', monospace;
+}
+
+
+
+.cards:hover{
+        box-shadow: 0 10px 20px rgba(0,0,0,.20), 0 4px 8px rgba(0,0,0,.6);;
+}
+
+.cards
+{
+    display: flex;
+    text-align: center;
+    width: 400px;
+    height: 500px;
+    background-color: #875f9a;
+    margin: 20px;
+    padding:10px;
+    border-radius: 30px;
+    font-size: 40px;
+}
+.wrapper {
+
+    display: flex;
+    justify-content: center;
+    background-color: transparent;
+    left: 0px;
+
+}
