@@ -14,12 +14,12 @@ h1{
 
 .wrapper p{
     font-size: 20px;
+    color: whitesmoke;
 }
 #ughh
 {
-    position: relative;
-    left:5vw;
     font-size: 20px;
+    text-align: center;
 }
 
 .cards:hover{
@@ -31,7 +31,7 @@ h1{
     
     width: 350px;
     height: 400px;
-    background-color: #875f9a;
+    background-color: #9898d3;
     margin: 20px;
     padding:30px;
     border-radius: 30px;
