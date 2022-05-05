@@ -2,8 +2,6 @@ var pomodoro = {
     started: false,
     minutes: 0,
     seconds: 0,
-    fillerHeight: 0,
-    fillerIncrement: 0,
     interval: null,
     minutesDom: null,
     secondsDom: null,
@@ -26,7 +24,7 @@ var pomodoro = {
         document.querySelector('#longBreak').onclick = function () {
             self.startLongBreak.apply(self);
         };
-        document.querySelector('#stop').onclick = function () {
+        document.querySelector('#pause').onclick = function () {
             self.stopTimer.apply(self);
         };
 
@@ -38,24 +36,29 @@ var pomodoro = {
     },
     startWork: function () {
         this.resetVariables(25, 0, true);
+        document.querySelector('#pause').innerHTML = 'Pause';
         this.container.style.background = '#d95550';
         this.buttons.style.background = '#dd6662';
     },
     startShortBreak: function () {
         this.resetVariables(5, 0, true);
+        document.querySelector('#pause').innerHTML = 'Pause';
         this.container.style.background = '#4b9195';
         this.buttons.style.background = '#609ca0';
     },
     startLongBreak: function () {
         this.resetVariables(15, 0, true);
+        document.querySelector('#pause').innerHTML = 'Pause';
         this.container.style.background = '#457ca2';
         this.buttons.style.background = '#5a88ac';
     },
     stopTimer: function () {
-        this.resetVariables(25, 0, false);
-        this.updateDom();
-        this.container.style.background = '#d95550';
-        this.buttons.style.background = '#dd6662';
+        if (this.started == false) {
+            this.started = true;
+        }
+        else {
+            this.started = false;
+        }
     },
     toDoubleDigit: function (num) {
         if (num < 10) {
