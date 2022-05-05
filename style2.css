@@ -1,42 +1,113 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;400&display=swap');
 
-body
-{
-   
+body {
     font-family: 'Roboto Mono', monospace;
-   
 }
 
-h1{
+nav {
+    position: sticky;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    /* z-index: 99px; */
+    /* background-color: white; */
+    padding: 16px 10px;
+    border-radius: 10px;
+    /* box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 48px; */
+}
+
+
+.nav-list {
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: -20px 0px;
+    color: black;
+
+}
+
+.logo {
+    position: relative;
+    max-width: 80px;
+}
+
+.nav-list ul {
+    position: relative;
+    display: flex;
+}
+
+.nav-list ul li {
+    list-style: none;
+}
+
+.nav-list a {
+
+    color: black;
+    margin: 0 -10px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: 0.4s;
+    padding: 8px 40px;
+}
+
+.nav-list ul li a {
+
+    color: black;
+    /* margin-left: 300px; */
+    font-weight: 600;
+    text-decoration: none;
+    transition: 0.4s;
+    padding: 8px 40px;
+}
+
+
+.nav-list ul a:hover {
+    background-color: #E6E6FA;
+    border-radius: 20px;
+    color: black;
+}
+
+h1 {
     text-align: center;
     font-size: 60px;
+    margin-top: -30px;
 }
 
-.wrapper p{
+.wrapper p {
     font-size: 20px;
     color: whitesmoke;
+    text-align: justify;
 }
-#ughh
-{
+
+#sub-header {
+    margin-bottom: 20px;
     font-size: 20px;
     text-align: center;
 }
 
-.cards:hover{
-        box-shadow: 0 10px 20px rgba(0,0,0,.20), 0 4px 8px rgba(0,0,0,.6);;
+.cards:hover {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, .20), 0 4px 8px rgba(0, 0, 0, .6);
+    ;
 }
 
-.cards
-{
-    
+.cards {
+
     width: 350px;
-    height: 400px;
+    height: 350px;
     background-color: #9898d3;
-    margin: 20px;
-    padding:30px;
+
+    /* margin: 20px; */
+    padding: 30px;
     border-radius: 30px;
     font-size: 40px;
+    text-align: center;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-top: 30px;
 }
+
 .wrapper {
 
     display: flex;
@@ -45,4 +116,19 @@ h1{
     position: relative;
     left: 1vw;
 
+}
+
+
+.card-sym {
+    margin-top: 10px;
+    margin-bottom: -5px;
+}
+
+h5 {
+    margin-top: 0px;
+    margin-bottom: 7px;
+}
+
+#logo {
+    width: 80px;
 }
