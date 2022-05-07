@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+ 
+        <title>chat room</title>
+        <meta name="description" content="Tuts+ Chat Application" />
+        <link rel="stylesheet" href="cstyle.css" />
+    </head>
+    <body>
+
+        <nav class="navbar">
+            <!-- The nav logo part -->
+            <div class="navlogo"><img src="icon.png"></div>
+            <!-- The hambargar menu -->
+            <a href="#" class="ham">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </a>
+            <!-- The nav links part -->
+            <div class="navlinks">
+                <ul>
+                    <!-- <li><a href="#">Home</a></li> -->
+                    <!-- <li><a href="#">About Us</a></li> -->
+                    <li><a href="to_do.html">to-do</a></li>
+                    <li><a href="pomodoro.html">pomodoro</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        
+        <div id="wrapper">
+            <div id="menu">
+                <p class="welcome">Welcome, <b></b></p>
+                <p class="logout"><a id="exit" href="#">Exit Chat</a></p>
+            </div>
+ 
+            <div id="chatbox"></div>
+ 
+            <form name="message" action="">
+                <input name="usermsg" type="text" id="usermsg" />
+                <input name="submitmsg" type="submit" id="submitmsg" value="Send" />
+            </form>
+        </div>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script type="text/javascript">
+            // jQuery Document
+            $(document).ready(function () {});
+        </script>
+    </body>
+</html>
