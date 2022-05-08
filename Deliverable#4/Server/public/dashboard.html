@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Home</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="icon.png">
+    <link rel="stylesheet" href="dashboard.css">
+    <script src="dashboard.js" defer></script>
+</head>
+
+<body>
+    <!-- Top bar with logo and logout button -->
+    <nav class="nav-list">
+        <a href="#"><img src="icon.png" class="logo"></a>
+        <ul>
+            <li>
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSfF0ctF4EsOfOgziKxLopWOuc1cFjm7zzU3UgJJazgPXi7jhw/viewform?usp=sf_link" target="_blank">
+                  Feedback Form
+                </a>
+            </li>
+            <li>
+                <a href="/logout">Log Out</a>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- Headers -->
+    <h1>Welcome to StudyBuddy!</h1>
+    <h2 id="sub-header"><span id="username"></span>, here are some quick actions to get you started</h2>
+
+    <!-- Pop up to take preference when the user clicks on start studying -->
+    <div id="pop-up" class="pop">
+
+        <div id="pop_in" class="bla">
+            <a href="dashboard.html" class="close">Close</a>
+            <label for="major"><input type="radio" id="major" name="preference" value="major"> Major</label><br>
+
+            <label for="class"><input type="radio" id="class" name="preference" value="class"> Class</label><br>
+
+            <label for="random"> <input type="radio" id="random" name="preference" value="random"> Random</label><br>
+            <button type="button" id="match_b" class="yay">Match</button>
+        </div>
+    </div>
+
+    <!-- Second step in matching -->
+    <div id="enter_major" class="pop">
+
+        <div class="bla">
+          <a href="dashboard.html" class="close">Close</a>
+            <label for="fname">Please type your major:</label><br>
+            <input type="text" id="fname" name="fname"><br>
+            <input type="submit" value="Submit" class="yay" id="submit_major">
+        </div>
+    </div>
+
+    <div id="enter_class" class="pop">
+
+        <div class="bla">
+            <a href="dashboard.html" class="close">Close</a>
+            <label for="fname">Please type your class:</label><br>
+            <input type="text" id="fname" name="fname"><br>
+            <input type="submit" value="Submit" class="yay">
+        </div>
+    </div>
+
+    <!-- Cards on the homepage corresponding to matching, to-do, and help -->
+    <div class="wrapper">
+        <div id="match" class="cards">
+            <h5>Start Studying</h5>
+            <img src="meet.png" alt="meeting-icon" class="card-sym">
+            <p>Click here to be paired up with people of your preference!</p>
+
+        </div>
+        <div id="to_do" class="cards">
+            <h5>To-do list</h5>
+            <img src="to-do.png" alt="todo-icon" class="card-sym">
+            <p>Click here to add and remove tasks from your to-do list!</p>
+
+        </div>
+        <div id="help" class="cards">
+            <h5>Help</h5>
+            <img src="help.png" alt="help-icon" class="card-sym">
+            <p>Click here for instructions on how to navigate the site!</p>
+        </div>
+    </div>
+
+    <!-- Display when the user is being matched -->
+    <div class="pop" id="ring">
+        <div class="lds-ring">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        Matching...
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>To-do List</title>
+  <link rel="stylesheet" href="style3.css">
+  <link rel="shortcut icon" href="icon.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Iconscout Link For Icons -->
+  <link rel="stylesheet" href="to_do_update.css">
+  <script src="script3.js" defer></script>
+</head>
+
+<body>
+  <div class="wrapper">
+    <!-- Top Bar consisting of study buddy logo with link to homepage and header -->
+    <a href="dashboard.html">
+      <img src="icon.png" class="logo" alt="study-buddy icon">
+    </a>
+    <p class="intro">Your to-do list!</p>
+    <!-- Input Field -->
+    <div class="task-input">
+
+      <input type="text" placeholder="Add a new task">
+    </div>
+    <!-- To do controls -->
+    <div class="controls">
+      <div class="filters">
+        <span class="active" id="all">All</span>
+        <span id="pending">Pending</span>
+        <span id="completed">Completed</span>
+      </div>
+      <button class="clear-btn">Clear All</button>
+    </div>
+    <!-- Actual List -->
+    <ul class="task-box"></ul>
+  </div>
+
+  <script src="to_do_update.js"></script>
+
+</body>
+
+</html>
