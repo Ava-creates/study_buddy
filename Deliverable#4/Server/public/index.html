@@ -8,22 +8,24 @@
     <title>Study Buddy</title>
     <link rel="shortcut icon" href="icon.png">
     <link rel="stylesheet" href="landing-page.css">
-    
+
     <script src="index.js" defer></script>
 </head>
 
 <body>
+    <!-- Nav Bar -->
     <nav class="nav-list">
         <!-- <a href="#" class="active">Home</a> -->
-        <a href="#"><img src="icon.png" class="logo"></a>
-        <a href="#">Study Buddy</a>
+        <a href="/"><img src="icon.png" class="logo"></a>
+        <a href="/">Study Buddy</a>
         <ul>
             <li>
-                <a id="loginButton" href="#">Login</a>
+                <a id="loginButton" href="/google">Login</a>
             </li>
         </ul>
 
     </nav>
+    <!-- Grid with text on left and a slider with images on right -->
     <div>
         <div class="content">
             <div class="text">
@@ -31,26 +33,31 @@
                 <p>
                     Get matched with a Study Buddy now. <br> Anytime. Anywhere.
                 </p>
-                <a href="#">Start Studying</a>
+                <a href="/google">Start Studying</a>
             </div>
             <div class="slider-container">
                 <div class="slider">
                     <div class="slides">
                         <div id="slides__1" class="slide">
+                            <!-- Slider Image -->
                             <div class="image">
                                 <img src="landing_1.png" alt="landing-page-mission">
                             </div>
+                            <!-- Slider Navigation -->
                             <a class="slide__prev" href="#slides__2" title="Next"></a>
                             <a class="slide__next" href="#slides__2" title="Next"></a>
                         </div>
                         <div id="slides__2" class="slide">
+                            <!-- Slider Image -->
                             <div class="image">
                                 <img src="landing_2.png" alt="landing-page-features">
                             </div>
+                            <!-- Slider Navigation -->
                             <a class="slide__prev" href="#slides__1" title="Prev"></a>
                             <a class="slide__next" href="#slides__1" title="Next"></a>
                         </div>
                     </div>
+                    <!-- Slider Navigation -->
                     <div class="slider__nav">
                         <a class="slider__navlink" href="#slides__1"></a>
                         <a class="slider__navlink" href="#slides__2"></a>
@@ -60,6 +67,7 @@
         </div>
 
     </div>
+    <!-- Study Buddy Footer -->
     <footer>
         <p>Happy Studying!</p>
     </footer>

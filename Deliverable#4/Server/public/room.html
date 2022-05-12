@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+
+    <title>Chat Room</title>
+    <meta name="description" content="chat room" />
+    <link rel="stylesheet" href="room.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.5.0/socket.io.min.js" defer></script>
+    <script src="pomodoro.js" defer></script>
+    <script src="room.js" defer></script>
+    <link rel="stylesheet" href="pomodoro.css">
+
+    <link rel="shortcut icon" href="icon.png">
+
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <!-- The nav logo part -->
+        <div class="navlogo"><img src="icon.png"></div>
+        <!-- The hambargar menu -->
+        <a href="#" class="ham">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </a>
+        <!-- The nav links part -->
+        <div class="navlinks">
+            <ul>
+                <!-- <li><a href="#">Home</a></li> -->
+                <!-- <li><a href="#">About Us</a></li> -->
+                <!-- <li><a href="to_do_update.html">to-do</a></li>
+                <li><a href="pomodoro.html">pomodoro</a></li> -->
+                <li>Study Buddy</li>
+            </ul>
+        </div>
+    </nav>
+
+    <div id="whatever">
+        <div id="wrapper">
+            <div id="menu">
+                <p class="welcome">Welcome, <b></b></p>
+                <p class="logout"><a href="#" id="exitChat">Exit Chat</a></p>
+            </div>
+
+            <div id="chatbox"></div>
+
+            <div class="formContainer">
+              <input name="usermsg" type="text" id="usermsg" />
+              <button name="submitmsg" id="submitmsg">Send</button>
+            </div>
+        </div>
+
+        <div class="wrapper2">
+            <!-- <img src="icon.png" class="logo" alt="study-buddy icon"> -->
+            <p class="intro">Your to-do list!</p>
+            <div class="task-input">
+
+                <input type="text" placeholder="Add a new task">
+            </div>
+            <div class="controls">
+                <div class="filters">
+                    <span class="active" id="all">All</span>
+                    <span id="pending">Pending</span>
+                    <span id="completed">Completed</span>
+                </div>
+                <button class="clear-btn">Clear All</button>
+            </div>
+            <ul class="task-box"></ul>
+        </div>
+
+        <div class="wrapper3">
+
+            <div id="container">
+                <span></span>
+                <div id="timer">
+                    <div id="breakText">Break</div>
+                    <div id="time">
+                        <span id="minutes">25</span>
+                        <span id="colon">:</span>
+                        <span id="seconds">00</span>
+                    </div>
+                    <div id="filler"></div>
+                </div>
+
+                <div id="buttons">
+                    <button id="work">Work</button>
+                    <button id="shortBreak">Short Break</button>
+                    <button id="longBreak">Long Break</button>
+                    <button id="pause">Pause</button>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/javascript">
+        // jQuery Document
+        $(document).ready(function () { });
+    </script>
+</body>
+
+</html>
